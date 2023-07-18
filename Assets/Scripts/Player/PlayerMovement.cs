@@ -8,6 +8,7 @@ namespace Player
     {
         [SerializeField] private float speed;
         private Rigidbody2D _rigidbody;
+        public bool CanMove { get; set; } = true;
 
         private void Start()
         {
@@ -16,6 +17,7 @@ namespace Player
 
         private void Update()
         {
+            if(!CanMove) return;
             var inputVector = PlayerInputs.Instance.Game.Move.ReadValue<Vector2>();
             _rigidbody.velocity = inputVector * speed;
         }

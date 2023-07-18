@@ -9,10 +9,11 @@ namespace Player
         [SerializeField] private Transform spawnPoint;
         public override void InstallBindings()
         {
-            var playerInstance = Container.InstantiatePrefabForComponent<PlayerMovement>(
+            
+            var playerInstance = Container.InstantiatePrefabForComponent<PlayerComposer>(
                 player, spawnPoint.position, Quaternion.identity, null);
             Container
-                .Bind<PlayerMovement>()
+                .Bind<PlayerComposer>()
                 .FromInstance(playerInstance)
                 .AsSingle();
         }

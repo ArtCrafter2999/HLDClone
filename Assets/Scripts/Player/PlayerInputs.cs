@@ -18,11 +18,8 @@ namespace Player
             return inst;
         }
 
-        public static Vector2 MouseDirection(Vector2 center)
-        {
-            var mousepos = (Vector2)Camera.main.ScreenToWorldPoint
-                (PlayerInputs.Instance.Game.MousePoisition.ReadValue<Vector2>());
-            return (mousepos - center).normalized;
-        }
+        public static Vector2 MousePosition() => Camera.main.ScreenToWorldPoint
+            (PlayerInputs.Instance.Game.MousePoisition.ReadValue<Vector2>());
+        public static Vector2 MouseDirection(Vector2 center) => (MousePosition() - center).normalized;
     }
 }

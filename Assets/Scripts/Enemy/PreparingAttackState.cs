@@ -2,28 +2,30 @@
 
 namespace Enemy
 {
-    public class PreparingAttackState: IState
+    public class PreparingAttackState: StateBase
     {
-        private readonly GenericMeleeEnemy _context;
+        [SerializeField] private float preparingTime;
+        
+        private FourStateEnemy _context;
         private float _timeLeft;
-        public PreparingAttackState(GenericMeleeEnemy context)
+        private void Awake()
         {
-            _context = context;
+            _context = GetComponent<FourStateEnemy>();
         }
         
-        public void Enter()
+        public override void Enter()
         {
-            MonoBehaviour.print("PreparingEnter");
             _context.animator.SetTrigger("Preparing");
-            _timeLeft = _context.preparingTime;
-            
+            _timeLeft = preparingTime;
+            _context.Rigidbody.velocity = Vector2.zero;
         }
 
-        public void Stay()
+        public override void Stay()
         {
             _timeLeft -= Time.deltaTime;
             if (_timeLeft <= 0)
-                _context.ChangeState(new AttackState(_context));
+                _context.ChangeState(_context.attackState);
         }
+        public override void Exit(){}
     }
 }

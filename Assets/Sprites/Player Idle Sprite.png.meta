@@ -117,85 +117,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 6253e1461dc9c0b8545ebb47d145659c_0
+      name: Player Idle Sprite_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7182cd99c9657cd4691027598f69c435
-      internalID: 396603201
+      spriteID: 2fd88718e6ee8d94896ebcb151b9154c
+      internalID: 892690377
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 6253e1461dc9c0b8545ebb47d145659c_1
+      name: Player Idle Sprite_1
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 867ef24248955d543bf388f8465ac8ce
-      internalID: -1175295545
+      spriteID: e1dcfe360b1704647acb1a4abb7a776a
+      internalID: -2093541250
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 6253e1461dc9c0b8545ebb47d145659c_2
+      name: Player Idle Sprite_2
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b2dedb3a4b65c644aae657cee78362c
-      internalID: -1320443782
+      spriteID: 87a16cc9b3099234ba444651cd4a4b6c
+      internalID: 1690255136
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 6253e1461dc9c0b8545ebb47d145659c_3
+      name: Player Idle Sprite_3
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa5841a54e4aa8d45bc0777063595a9b
-      internalID: 918635296
+      spriteID: 32618aac2e173ff4ba14688748d5c973
+      internalID: -846937530
       vertices: []
       indices: 
       edges: []
@@ -211,10 +211,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      6253e1461dc9c0b8545ebb47d145659c_0: 396603201
-      6253e1461dc9c0b8545ebb47d145659c_1: -1175295545
-      6253e1461dc9c0b8545ebb47d145659c_2: -1320443782
-      6253e1461dc9c0b8545ebb47d145659c_3: 918635296
+      Player Idle Sprite_0: 892690377
+      Player Idle Sprite_1: -2093541250
+      Player Idle Sprite_2: 1690255136
+      Player Idle Sprite_3: -846937530
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -1,30 +1,32 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Enemy
 {
-    public class IdleState : IState
+    public class IdleState : StateBase
     {
-        private readonly GenericMeleeEnemy _context;
-        
-        public IdleState(GenericMeleeEnemy context)
+        [SerializeField] private float invokeDistance;
+        [SerializeField] private LayerMask rayCastLayers;
+        private FourStateEnemy _context;
+
+        private void Awake()
         {
-            _context = context;
+            _context = GetComponent<FourStateEnemy>();
         }
         
-        public void Enter()
+        public override void Enter()
         {
-            MonoBehaviour.print("IdleEnter");
             _context.animator.SetTrigger("Idle");
         }
 
-        public void Stay()
+        public override void Stay()
         {
-            
             Vector2 pos = _context.gameObject.transform.position;
-            Vector2 pPos = _context.Player.transform.position;
-            var hit = Physics2D.Raycast(pos, pPos - pos, _context.invokeDistance);
+            Vector2 pPos = _context.Player.position;
+            var hit = Physics2D.Raycast(pos, pPos - pos, invokeDistance, rayCastLayers);
             if (!hit || !hit.transform.CompareTag("Player")) return;
-            _context.ChangeState(new RunState(_context));
+            _context.ChangeState(_context.runState);
         }
+        public override void Exit(){}
     }
 }
