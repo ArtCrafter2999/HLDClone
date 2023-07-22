@@ -51,5 +51,21 @@ namespace Player
             //print("mousePos:" + mousepos + "; angle:" + angle + "; dir:" + dir);
             animator.SetTrigger("Attack");
         }
+
+        public void Healing()
+        {
+            animator.SetTrigger("Heal");
+        }
+
+        public void Death()
+        {
+            animator.SetTrigger("Dead");
+        }
+
+        public void Down()
+        {
+            _dir = 2;
+            animator.SetInteger("Direction", 2);
+        }
     }
 }

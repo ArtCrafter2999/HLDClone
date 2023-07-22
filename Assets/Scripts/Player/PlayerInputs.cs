@@ -14,7 +14,6 @@ namespace Player
         private static PlayerIS CreateInstance()
         {
             var inst = new PlayerIS();
-            inst.Game.Enable();
             return inst;
         }
 

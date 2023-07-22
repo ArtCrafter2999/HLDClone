@@ -13,7 +13,7 @@ namespace Player
     {
         [SerializeField] private float attackDistanceRange;
         [SerializeField] private float attackRadiusRange;
-        [SerializeField] private float attackDamage = 1;
+        [SerializeField] private int attackDamage = 1;
         [SerializeField] private float knockBack = 1;
     
         [SerializeField] private float impulseForce;

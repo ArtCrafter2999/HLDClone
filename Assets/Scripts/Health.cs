@@ -4,8 +4,8 @@ using UnityEngine.Events;
 
 public class Health : MonoBehaviour, ITakeDamage
 {
-    public float maxHealth;
-    public float health;
+    public int maxHealth;
+    public int health;
 
     public UnityEvent<float> healthChanged;
     public UnityEvent<float> damaged;
@@ -18,7 +18,7 @@ public class Health : MonoBehaviour, ITakeDamage
         if (health <= 0) dead.Invoke(gameObject);
     }
 
-    public virtual void TakeDamage(float amount)
+    public virtual void TakeDamage(int amount)
     {
         if (!enabled) return;
         health -= amount;
@@ -27,7 +27,7 @@ public class Health : MonoBehaviour, ITakeDamage
         Clamp();
     }
 
-    public virtual void TakeHeal(float amount)
+    public virtual void TakeHeal(int amount)
     {
         if (!enabled) return;
         health += amount;

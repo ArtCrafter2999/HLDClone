@@ -25,6 +25,7 @@ public class FourStateEnemy : MonoBehaviour
     private void Construct(PlayerComposer playerComposer)
     {
         Player = playerComposer.transform;
+        playerComposer.health.dead.AddListener(_ => ChangeState(idleState));
     }
 
     private void Start()
@@ -35,6 +36,7 @@ public class FourStateEnemy : MonoBehaviour
 
     public void ChangeState(StateBase newStateBase)
     {
+        if(!enabled) return;
         if(_stateBase != null)_stateBase.Exit();
         _stateBase = newStateBase;
         newStateBase.Enter();

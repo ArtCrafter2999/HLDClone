@@ -4,7 +4,7 @@ using UnityEngine;
     public class Projectile : MonoBehaviour
     {
         [SerializeField] private float speed;
-        [SerializeField] private float damage;
+        [SerializeField] private int damage;
         [SerializeField] private float destroyTime = 10;
         [SerializeField] private LayerMask obstacles;
         private Rigidbody2D _rigidbody;
@@ -43,7 +43,6 @@ using UnityEngine;
             if (col.TryGetComponent(out ITakeDamage target))
             {
                 target.TakeDamage(damage);
-                print("damaged");
             }
             Destroy(gameObject);
         }

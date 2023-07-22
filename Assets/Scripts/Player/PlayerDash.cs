@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 using Random = UnityEngine.Random;
+using Environment;
 
 namespace Player
 {
@@ -19,6 +19,8 @@ namespace Player
         private Vector2 _moveInput;
         private Rigidbody2D _rigidbody;
         private float _cooldownLeft;
+        private ITakeDamage health;
+        private Vector3 previousPoint;
         public bool CanDash { get; set; } = true;
         public bool IsDashing { get; private set; }
         
@@ -27,6 +29,7 @@ namespace Player
 
         private void Start()
         {
+            health = GetComponent<Health>();
             _rigidbody = GetComponent<Rigidbody2D>();
             PlayerInputs.Instance.Game.Dash.performed += _ => Dash();
         }
@@ -46,15 +49,24 @@ namespace Player
 
         private IEnumerator DashPerform()
         {
+            previousPoint = transform.position;
             source.PlayOneShot(clips[Random.Range(0, clips.Length)]);
             IsDashing = true;
             _rigidbody.velocity = Vector2.zero;
-            _rigidbody.AddForce(_moveInput * dashForce, ForceMode2D.Impulse);
             dashPerformed.Invoke();
+            _rigidbody.AddForce(_moveInput * dashForce, ForceMode2D.Impulse);
             yield return new WaitForSeconds(dashTime);
             _cooldownLeft = dashCooldown;
             dashEnded.Invoke();
             IsDashing = false;
+            if(WaterCollisions.PlayerDamage) DamageByWater();
+        }
+
+        private void DamageByWater()
+        {
+            health.TakeDamage(1);
+            transform.position = previousPoint;
+            WaterCollisions.PlayerDamage = false;
         }
     }
 }

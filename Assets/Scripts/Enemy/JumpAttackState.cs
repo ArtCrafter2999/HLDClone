@@ -6,7 +6,7 @@ namespace Enemy
 {
     public class JumpAttackState : StateBase
     {
-        [SerializeField] private float damage;
+        [SerializeField] private int damage;
         [SerializeField] private float attackTime;
         [SerializeField] private float attackForce;
         [SerializeField] private LayerMask playerLayer;

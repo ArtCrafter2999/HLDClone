@@ -5,9 +5,10 @@ namespace Player
     [Serializable]
     public class PlayerVariables
     {
-        public float MaxHealth =5;
-        public float Health = 5;
-        public float Medkits;
-        public float Ammo;
+        public int MaxHealth =5;
+        public int Health = 5;
+        public int MaxMedkits = 3;
+        public int Medkits = 0;
+        public int Ammo = 0;
     }
 }

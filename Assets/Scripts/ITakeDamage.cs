@@ -2,5 +2,5 @@
 
 public interface ITakeDamage
 {
-    void TakeDamage(float amount);
+    void TakeDamage(int amount);
 }
