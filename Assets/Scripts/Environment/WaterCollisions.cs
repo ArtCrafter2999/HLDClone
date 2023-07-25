@@ -35,7 +35,7 @@ namespace Environment
         {
             _collider.isTrigger = true;
             _collider.bounds.Expand(-0.5f);
-        }
+        } 
 
         private void Enable()
         {

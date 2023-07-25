@@ -40,6 +40,7 @@ namespace Player
         {
             _lowHpCooldown = lowHpCooldown;
             PlayerInputs.Instance.Game.Heal.performed += _ => Heal();
+            dead.AddListener(_ => PlayerInputs.ClearInstance());
         }
 
         public override void TakeDamage(int amount)

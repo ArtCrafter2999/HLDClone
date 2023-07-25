@@ -11,11 +11,15 @@ public class Health : MonoBehaviour, ITakeDamage
     public UnityEvent<float> damaged;
     public UnityEvent<float> healed;
     public UnityEvent<GameObject> dead;
+    
+    public bool IsDead { get; private set; }
 
     private void Clamp()
     {
         health = Mathf.Clamp(health, 0, maxHealth);
-        if (health <= 0) dead.Invoke(gameObject);
+        if (health > 0) return;
+        dead.Invoke(gameObject);
+        IsDead = true;
     }
 
     public virtual void TakeDamage(int amount)

@@ -181,6 +181,7 @@ MonoBehaviour:
   preparingState: {fileID: 4147515486187775478}
   attackState: {fileID: 4147515486187775479}
   animator: {fileID: 4147515486187775472}
+  CanFlip: 1
 --- !u!114 &4147515486187775480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,10 +194,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 753fb048739040ff97114fc7026d2b77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  turnToRunState: 1
   invokeDistance: 10
   rayCastLayers:
     serializedVersion: 2
     m_Bits: 72
+  SeePlayer:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &4147515486187775481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,6 +218,7 @@ MonoBehaviour:
   speed: 1
   maxSpeed: 2
   attackDistance: 1
+  attackCooldown: 0
   invokeSound: {fileID: 8300000, guid: 4534bd48f04e37946b443ceb2e241883, type: 3}
 --- !u!114 &4147515486187775478
 MonoBehaviour:
@@ -227,6 +233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   preparingTime: 0.8
+  sound: {fileID: 0}
 --- !u!114 &4147515486187775479
 MonoBehaviour:
   m_ObjectHideFlags: 0

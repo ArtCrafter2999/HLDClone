@@ -21,6 +21,8 @@ namespace Player
         [SerializeField] private int maxCombo = 3;
         [SerializeField] private float comboCooldown = 1;
 
+        [SerializeField] private LayerMask rayCastLayers;
+
         [Header("Sounds")] 
         [SerializeField] private AudioSource source;
         [SerializeField] private AudioClip clip;
@@ -69,6 +71,11 @@ namespace Player
             {
                 if(coll.CompareTag("Player")) continue;
                 if(!coll.TryGetComponent(out ITakeDamage health)) continue;
+                Physics2D.Raycast(
+                    transform.position, 
+                    coll.transform.position - transform.position,
+                    attackDistanceRange + attackRadiusRange, 
+                    rayCastLayers);
                 if(coll.TryGetComponent(out Rigidbody2D rb)) rb.AddForce((rb.transform.position - transform.position) * knockBack , ForceMode2D.Impulse);
                 health.TakeDamage(attackDamage);
             }

@@ -5,6 +5,7 @@ namespace Enemy
     public class PreparingAttackState: StateBase
     {
         [SerializeField] private float preparingTime;
+        [SerializeField] private AudioClip sound;
         
         private FourStateEnemy _context;
         private float _timeLeft;
@@ -18,6 +19,7 @@ namespace Enemy
             _context.animator.SetTrigger("Preparing");
             _timeLeft = preparingTime;
             _context.Rigidbody.velocity = Vector2.zero;
+            _context.Play(sound);
         }
 
         public override void Stay()
