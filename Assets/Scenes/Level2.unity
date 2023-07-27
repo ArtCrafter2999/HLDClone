@@ -731,6 +731,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GenericRangeEnemy (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1527014102104740621, guid: ab67e197cd8f50147a629a791574820d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab67e197cd8f50147a629a791574820d, type: 3}
 --- !u!1 &10711987
@@ -3032,6 +3036,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GenericRangeEnemy (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1527014102104740621, guid: ab67e197cd8f50147a629a791574820d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab67e197cd8f50147a629a791574820d, type: 3}
 --- !u!1 &78748584
@@ -4283,6 +4291,10 @@ PrefabInstance:
     - target: {fileID: 1527014102104740621, guid: ab67e197cd8f50147a629a791574820d, type: 3}
       propertyPath: m_Name
       value: GenericRangeEnemy (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527014102104740621, guid: ab67e197cd8f50147a629a791574820d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab67e197cd8f50147a629a791574820d, type: 3}
@@ -11327,6 +11339,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GenericMeleeEnemy (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4147515486187775473, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4147515486187775474, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
       propertyPath: m_RootOrder
       value: 21
@@ -11766,6 +11782,7 @@ GameObject:
   m_Component:
   - component: {fileID: 310771881}
   - component: {fileID: 310771880}
+  - component: {fileID: 310771882}
   m_Layer: 0
   m_Name: Waterfall
   m_TagString: Untagged
@@ -11840,6 +11857,32 @@ Transform:
   m_Father: {fileID: 987867943}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &310771882
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 310771879}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.4615386, y: 5}
+    newSize: {x: 2.4615386, y: 5.076923}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.4615386, y: 5}
+  m_EdgeRadius: 0
 --- !u!1001 &316984621
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11894,6 +11937,10 @@ PrefabInstance:
     - target: {fileID: 1527014102104740621, guid: ab67e197cd8f50147a629a791574820d, type: 3}
       propertyPath: m_Name
       value: GenericRangeEnemy (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527014102104740621, guid: ab67e197cd8f50147a629a791574820d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab67e197cd8f50147a629a791574820d, type: 3}
@@ -12582,6 +12629,10 @@ PrefabInstance:
     - target: {fileID: 1527014102104740621, guid: ab67e197cd8f50147a629a791574820d, type: 3}
       propertyPath: m_Name
       value: GenericRangeEnemy (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527014102104740621, guid: ab67e197cd8f50147a629a791574820d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab67e197cd8f50147a629a791574820d, type: 3}
@@ -13324,6 +13375,7 @@ GameObject:
   m_Component:
   - component: {fileID: 356625499}
   - component: {fileID: 356625498}
+  - component: {fileID: 356625500}
   m_Layer: 0
   m_Name: Waterfall
   m_TagString: Untagged
@@ -13398,6 +13450,32 @@ Transform:
   m_Father: {fileID: 987867943}
   m_RootOrder: 61
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &356625500
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 356625497}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.4615386, y: 5}
+    newSize: {x: 2.4615386, y: 5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.4615386, y: 5}
+  m_EdgeRadius: 0
 --- !u!1 &357412238
 GameObject:
   m_ObjectHideFlags: 0
@@ -14995,6 +15073,10 @@ PrefabInstance:
     - target: {fileID: 4147515486187775473, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
       propertyPath: m_Name
       value: GenericMeleeEnemy (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4147515486187775473, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4147515486187775474, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
       propertyPath: m_RootOrder
@@ -19250,6 +19332,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlantEnemy (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 665416107810006418, guid: 5c0b29e9ba719d04886c4fd4e8851939, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c0b29e9ba719d04886c4fd4e8851939, type: 3}
 --- !u!114 &523709734 stripped
@@ -20854,6 +20940,10 @@ PrefabInstance:
     - target: {fileID: 4147515486187775473, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
       propertyPath: m_Name
       value: GenericMeleeEnemy (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4147515486187775473, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4147515486187775474, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
       propertyPath: m_RootOrder
@@ -23290,6 +23380,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GenericMeleeEnemy (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 4147515486187775473, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4147515486187775474, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -24426,6 +24520,10 @@ PrefabInstance:
     - target: {fileID: 1527014102104740621, guid: ab67e197cd8f50147a629a791574820d, type: 3}
       propertyPath: m_Name
       value: GenericRangeEnemy (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527014102104740621, guid: ab67e197cd8f50147a629a791574820d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab67e197cd8f50147a629a791574820d, type: 3}
@@ -26097,6 +26195,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GenericRangeEnemy (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1527014102104740621, guid: ab67e197cd8f50147a629a791574820d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab67e197cd8f50147a629a791574820d, type: 3}
 --- !u!1001 &683730194
@@ -27043,6 +27145,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlantEnemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 665416107810006418, guid: 5c0b29e9ba719d04886c4fd4e8851939, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c0b29e9ba719d04886c4fd4e8851939, type: 3}
 --- !u!114 &714942167 stripped
@@ -27177,6 +27283,10 @@ PrefabInstance:
     - target: {fileID: 4147515486187775473, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
       propertyPath: m_Name
       value: GenericMeleeEnemy (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4147515486187775473, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4147515486187775474, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
       propertyPath: m_RootOrder
@@ -28355,6 +28465,10 @@ PrefabInstance:
     - target: {fileID: 4147515486187775473, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
       propertyPath: m_Name
       value: GenericMeleeEnemy (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4147515486187775473, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4147515486187775474, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
       propertyPath: m_RootOrder
@@ -29811,6 +29925,10 @@ PrefabInstance:
     - target: {fileID: 4147515486187775473, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
       propertyPath: m_Name
       value: GenericMeleeEnemy (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4147515486187775473, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4147515486187775474, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
       propertyPath: m_RootOrder
@@ -32801,6 +32919,10 @@ PrefabInstance:
     - target: {fileID: 1527014102104740621, guid: ab67e197cd8f50147a629a791574820d, type: 3}
       propertyPath: m_Name
       value: GenericRangeEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527014102104740621, guid: ab67e197cd8f50147a629a791574820d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab67e197cd8f50147a629a791574820d, type: 3}
@@ -39219,6 +39341,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GenericRangeEnemy (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1527014102104740621, guid: ab67e197cd8f50147a629a791574820d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab67e197cd8f50147a629a791574820d, type: 3}
 --- !u!1 &1019396916
@@ -41650,6 +41776,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GenericRangeEnemy (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1527014102104740621, guid: ab67e197cd8f50147a629a791574820d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab67e197cd8f50147a629a791574820d, type: 3}
 --- !u!1 &1058153844
@@ -43411,6 +43541,10 @@ PrefabInstance:
     - target: {fileID: 4147515486187775473, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
       propertyPath: m_Name
       value: GenericMeleeEnemy (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4147515486187775473, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4147515486187775474, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
       propertyPath: m_RootOrder
@@ -47373,7 +47507,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1213386543}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.57, y: 19.05, z: -10}
+  m_LocalPosition: {x: 21.72, y: 20.4, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -51212,8 +51346,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1305554847}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.972101, y: -12.3106, z: 0}
-  m_LocalScale: {x: -2.4662478, y: 0.62928814, z: 1}
+  m_LocalPosition: {x: 14.9829, y: -12.3106, z: 0}
+  m_LocalScale: {x: -1.9495581, y: 0.62928814, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1423196820}
@@ -51444,6 +51578,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GenericMeleeEnemy (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 4147515486187775473, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4147515486187775474, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -51654,6 +51792,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1315823649}
   - component: {fileID: 1315823648}
+  - component: {fileID: 1315823650}
   m_Layer: 0
   m_Name: Waterfall
   m_TagString: Untagged
@@ -51728,6 +51867,32 @@ Transform:
   m_Father: {fileID: 987867943}
   m_RootOrder: 62
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1315823650
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315823647}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -2.3292673}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.4615386, y: 5}
+    newSize: {x: 2.4615386, y: 5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.4615386, y: 0.34146547}
+  m_EdgeRadius: 0
 --- !u!1 &1319482771
 GameObject:
   m_ObjectHideFlags: 0
@@ -54042,6 +54207,10 @@ PrefabInstance:
     - target: {fileID: 4147515486187775473, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
       propertyPath: m_Name
       value: GenericMeleeEnemy (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4147515486187775473, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4147515486187775474, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
       propertyPath: m_RootOrder
@@ -56770,6 +56939,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GenericRangeEnemy (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1527014102104740621, guid: ab67e197cd8f50147a629a791574820d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab67e197cd8f50147a629a791574820d, type: 3}
 --- !u!1 &1418492170
@@ -59019,6 +59192,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlantEnemy (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 665416107810006418, guid: 5c0b29e9ba719d04886c4fd4e8851939, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c0b29e9ba719d04886c4fd4e8851939, type: 3}
 --- !u!114 &1464444381 stripped
@@ -59042,6 +59219,10 @@ PrefabInstance:
     - target: {fileID: 4147515486187775473, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
       propertyPath: m_Name
       value: GenericMeleeEnemy (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4147515486187775473, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4147515486187775474, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
       propertyPath: m_RootOrder
@@ -60539,10 +60720,22 @@ PrefabInstance:
     - target: {fileID: 7507780474989157591, guid: 19cb38722a966db479228e422f615fb3, type: 3}
       propertyPath: interacted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 794460232}
+      objectReference: {fileID: 794460233}
     - target: {fileID: 7507780474989157591, guid: 19cb38722a966db479228e422f615fb3, type: 3}
       propertyPath: interacted.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7507780474989157591, guid: 19cb38722a966db479228e422f615fb3, type: 3}
+      propertyPath: interacted.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeState
+      objectReference: {fileID: 0}
+    - target: {fileID: 7507780474989157591, guid: 19cb38722a966db479228e422f615fb3, type: 3}
+      propertyPath: interacted.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Environment.StateChangingGroup, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7507780474989157591, guid: 19cb38722a966db479228e422f615fb3, type: 3}
+      propertyPath: interacted.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19cb38722a966db479228e422f615fb3, type: 3}
@@ -62444,6 +62637,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GenericMeleeEnemy (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 4147515486187775473, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4147515486187775474, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -63187,6 +63384,10 @@ PrefabInstance:
     - target: {fileID: 4147515486187775473, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
       propertyPath: m_Name
       value: GenericMeleeEnemy (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4147515486187775473, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4147515486187775474, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
       propertyPath: m_RootOrder
@@ -64576,6 +64777,10 @@ PrefabInstance:
     - target: {fileID: 1527014102104740621, guid: ab67e197cd8f50147a629a791574820d, type: 3}
       propertyPath: m_Name
       value: GenericRangeEnemy (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527014102104740621, guid: ab67e197cd8f50147a629a791574820d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab67e197cd8f50147a629a791574820d, type: 3}
@@ -70040,6 +70245,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1786803166}
   - component: {fileID: 1786803165}
+  - component: {fileID: 1786803167}
   m_Layer: 0
   m_Name: Waterfall
   m_TagString: Untagged
@@ -70114,6 +70320,32 @@ Transform:
   m_Father: {fileID: 987867943}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1786803167
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786803164}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.4615386, y: 5}
+    newSize: {x: 2.4615386, y: 5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.4615386, y: 5}
+  m_EdgeRadius: 0
 --- !u!1001 &1787496265
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -72026,6 +72258,10 @@ PrefabInstance:
     - target: {fileID: 4147515486187775473, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
       propertyPath: m_Name
       value: GenericMeleeEnemy (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4147515486187775473, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4147515486187775474, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
       propertyPath: m_RootOrder
@@ -75077,6 +75313,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GenericMeleeEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 4147515486187775473, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4147515486187775474, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
       propertyPath: m_RootOrder
       value: 34
@@ -75809,7 +76049,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1975485388}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.57, y: 19.05, z: -10}
+  m_LocalPosition: {x: 21.72, y: 20.4, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -76626,7 +76866,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2013966395}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.57, y: 19.05, z: 0}
+  m_LocalPosition: {x: 21.72, y: 20.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -78554,6 +78794,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GenericMeleeEnemy (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 4147515486187775473, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4147515486187775474, guid: a94d8686cd60f5446989e0da16440b5a, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -80039,6 +80283,10 @@ PrefabInstance:
     - target: {fileID: 665416107810006418, guid: 5c0b29e9ba719d04886c4fd4e8851939, type: 3}
       propertyPath: m_Name
       value: BigPlantEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 665416107810006418, guid: 5c0b29e9ba719d04886c4fd4e8851939, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c0b29e9ba719d04886c4fd4e8851939, type: 3}
